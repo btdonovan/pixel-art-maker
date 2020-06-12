@@ -2,6 +2,8 @@
   display: inline-grid;
   grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto ;
   border: 0.5px solid grey;
+  grid-column-gap: 0;
+  grid-row-gap: 0;
 }
 
 .grid-item {
@@ -11,20 +13,96 @@
   width: 10px;
   padding: 0px;
 }
+
+.grid-item-black {
+  background-color: black;
+  border: 0.5px solid black;
+}
+.grid-item-silver {
+  background-color: silver;
+  border: 0.5px solid silver;
+}
+.grid-item-gray {
+  background-color: gray;
+  border: 0.5px solid gray;
+}
 .grid-item-white {
   background-color: white;
+  border: 0.5px solid white;
+}
+.grid-item-fuchsia {
+  background-color: fuchsia;
+  border: 0.5px solid fuchsia;
+}
+.grid-item-purple {
+  background-color: purple;
+  border: 0.5px solid purple;
+}
+.grid-item-maroon {
+  background-color: maroon;
+  border: 0.5px solid maroon;
 }
 .grid-item-red {
   background-color: red;
+  border: 0.5px solid red;
 }
-
+.grid-item-brown {
+  background-color: brown;
+  border: 0.5px solid brown;
+}
+.grid-item-orange {
+  background-color: orange;
+  border: 0.5px solid orange;
+}
+.grid-item-yellow {
+  background-color: yellow;
+  border: 0.5px solid yellow;
+}
+.grid-item-olive {
+  background-color: olive;
+  border: 0.5px solid olive;
+}
+.grid-item-lime {
+  background-color: lime;
+  border: 0.5px solid lime;
+}
+.grid-item-green {
+  background-color: green;
+  border: 0.5px solid green;
+}
+.grid-item-teal {
+  background-color: teal;
+  border: 0.5px solid teal;
+}
+.grid-item-aqua {
+  background-color: aqua;
+  border: 0.5px solid aqua;
+}
 .grid-item-blue {
   background-color: blue;
+  border: 0.5px solid blue;
+}
+.grid-item-navy {
+  background-color: navy;
+  border: 0.5px solid navy;
+}
+
+
+.box {
+  border: 1.5px solid grey;
+  height: 21px;
+  width: 41px;
+}
+.current-color {
+  background-color: white;
+  border: 0.5px solid black;
+  height: 20px;
+  width: 40px;
 }
 
 .palette {
   display: inline-grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto auto auto auto auto auto auto auto auto;
 }
 .palette-item {
   border: 2px solid grey;

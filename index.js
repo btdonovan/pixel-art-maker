@@ -7,15 +7,24 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   let gridItems = document.querySelectorAll(".grid-item")
+  let currentColor = 'grid-item-white';
+  let selectedColorBox = document.querySelector("#current-color");
+  let palette = document.querySelector('#palette');
+  let colors = ['black', 'silver', 'gray', 'white', 'fuchsia', 'purple', 'maroon', 'red', 'brown', 'orange', 'yellow', 'olive', 'lime', 'green', 'teal', 'aqua', 'blue', 'navy' ]
+
+  for (let color of colors) {
+    let newPaletteItem = document.createElement('div')
+    let newClass = `grid-item-${color}`
+    newPaletteItem.classList.add('palette-item')
+    newPaletteItem.classList.add(newClass);
+    palette.appendChild(newPaletteItem);
+  }
   let paletteColors = document.querySelectorAll(".palette-item");
-  let currentColor = 'grid-item-white'
-
-  
-
-
   for (let paletteColor of paletteColors) {
     paletteColor.addEventListener('click', function(event) {
       currentColor = event.target.classList[1];
+      selectedColorBox.classList.remove[selectedColorBox.classList[1]];
+      selectedColorBox.classList.add(currentColor);
     })
   }
   for (let gridItem of gridItems) {
