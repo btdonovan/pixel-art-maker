@@ -1,15 +1,21 @@
-.center-text: {
+body {
+  background-color: grey;
+}
+
+.center-text {
   text-align: center;
 }
+
 .center {
   padding: 25px;
   border-radius: 25px;
   background-color: lightgrey;
-  text-align: center;
   display: inline-block;
+  box-shadow: 0 0.1em 16px 0; black;
+  transition: 0.3s;
 }
+
 .grid-container {
-  
   display: inline-grid;
   grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto ;
   border: 0.5px solid grey;
