@@ -22,9 +22,15 @@ document.addEventListener('DOMContentLoaded', function () {
   let paletteColors = document.querySelectorAll(".palette-item");
   for (let paletteColor of paletteColors) {
     paletteColor.addEventListener('click', function(event) {
+      for (let color of paletteColors) {
+        if (color.classList.length === 3) {
+          color.classList.remove(color.classList[2]);
+        }
+      }
       currentColor = event.target.classList[1];
-      selectedColorBox.classList.remove[selectedColorBox.classList[1]];
+      selectedColorBox.classList.remove(selectedColorBox.classList[1]);
       selectedColorBox.classList.add(currentColor);
+      event.target.classList.add('selected-palette');
     })
   }
   for (let gridItem of gridItems) {
