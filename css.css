@@ -1,5 +1,7 @@
+.center-text: {
+  text-align: center;
+}
 .center {
-  margin: auto;
   padding: 25px;
   border-radius: 25px;
   background-color: lightgrey;
@@ -101,6 +103,7 @@
   border: 1.5px solid grey;
   height: 21px;
   width: 41px;
+  display: inline-block
 }
 .current-color {
   border: 0.5px solid black;
